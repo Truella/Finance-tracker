@@ -117,7 +117,7 @@ def create_element(trans):
         label = Label(frame, text=transaction["category"], width=20)
         label.grid(row=0, column=0)
         label.grid_propagate(False)
-        label = Label(frame, text=transaction["amount"], width=20)
+        label = Label(frame, text="$ " + transaction["amount"], width=20)
         label.grid(row=0, column=1)
         label.grid_propagate(False)
         label = Label(frame, text=transaction["date"], width=20)
